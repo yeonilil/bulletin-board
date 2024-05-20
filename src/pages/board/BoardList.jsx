@@ -1,7 +1,7 @@
 import styles from "./BoardList.scss";
 
 function BoardList() {
-  return <></>;
+  return <div className="page-wrapper"></div>;
 }
 
 export default BoardList;

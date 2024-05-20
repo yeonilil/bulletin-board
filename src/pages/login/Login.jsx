@@ -1,7 +1,7 @@
 import styles from "./Login.module.scss";
 
 function Login() {
-  return <></>;
+  return <div className="page-wrapper"></div>;
 }
 
 export default Login;
