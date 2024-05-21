@@ -1,0 +1,67 @@
+.header {
+  width: 100%;
+  height: 88px;
+  border-bottom: 1px solid #e1e1e1;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  color: #272727;
+  z-index: 999;
+}
+.logoNav {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.logoImg {
+  width: 89px;
+  height: 36px;
+  margin-left: 400px;
+}
+.categoryMenu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+}
+header ul > li {
+  padding: 14px 24px;
+}
+.navLink {
+  text-decoration: none #272727;
+  &:visited {
+    color: black;
+  }
+}
+.loginButton {
+  height: 48px;
+  border: 1px solid #e1e1e1;
+  border-radius: 4px;
+  margin-right: 400px;
+  padding: 12px 40px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.loginInfo {
+  margin-right: 400px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/*tablet*/
+@media (max-width: 1300px) {
+  .logoImg {
+    margin-left: 200px;
+  }
+  .loginButton,
+  .loginInfo {
+    margin-right: 200px;
+  }
+}
+/*mobile*/
+@media (max-width: 320px) {
+}

@@ -1,4 +1,4 @@
-import styles from "./BoardList.scss";
+import styles from "./BoardList.module.scss";
 
 function BoardList() {
   return <div className="page-wrapper"></div>;
