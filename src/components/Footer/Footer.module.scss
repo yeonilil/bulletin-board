@@ -1,0 +1,52 @@
+footer {
+  width: 100%;
+  height: 330px;
+  background-color: #ffffff;
+  border-top: 1px solid #e1e1e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+}
+.footerContainer {
+  width: 1140px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px auto 101px auto;
+  font-weight: 400;
+  font-size: 14px;
+  p {
+    margin: 4px 0px;
+  }
+}
+.testText {
+  font-weight: 700;
+  font-size: 16px;
+}
+.footerBottom {
+  width: 100%;
+  height: 98px;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  p {
+    color: #b8b7b7;
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 4px;
+  }
+}
+.policyContainer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 24px;
+  p {
+    margin: 0 8px;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: -0.1px;
+  }
+}
