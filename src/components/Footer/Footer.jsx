@@ -1,6 +1,7 @@
 import styles from "./Footer.module.scss";
 
 function Footer() {
+  if (window.location.pathname === "/dashboard") return null;
   return (
     <footer>
       <div className={styles.footerContainer}>

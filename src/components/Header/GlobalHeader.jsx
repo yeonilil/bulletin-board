@@ -11,6 +11,8 @@ function GlobalHeader() {
 
   const [isLogin, setIsLogin] = useState(false);
 
+  if (window.location.pathname === "/dashboard") return null;
+
   return (
     <header className={styles.header}>
       <div className={styles.logoNav}>
