@@ -1,0 +1,67 @@
+.boardNav {
+  width: 280px;
+  background-color: white;
+  height: 100vh;
+  display: fixed;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-right: 1px solid #e1e1e1;
+  padding: 60px 40px;
+  z-index: 999;
+  li {
+    list-style: none;
+    font-weight: 400;
+    font-size: 20px;
+    padding: 20px 0;
+  }
+}
+.logoImg {
+  width: 89px;
+  height: 36px;
+  margin-bottom: 20px;
+}
+.boardMenu {
+  color: #ee3918;
+}
+.boardHeader {
+  width: 100vw;
+  height: 50px;
+  padding: 10px 24px;
+  border-bottom: 1px solid #e1e1e1;
+  position: absolute;
+  top: 0;
+  left: 280px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 998;
+  p {
+    font-weight: 700;
+    font-size: 20px;
+  }
+}
+.dashboardContainer {
+  position: absolute;
+  margin-left: 280px;
+  margin-top: 50px;
+}
+.chartContainer {
+  width: 1560px;
+  height: 896px;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  gap: 20px;
+}
+.lineChart {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+}
+.barChart {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+}
+.barChart {
+  grid-row: 2 / span 1;
+  grid-column: 1 / span 1;
+}

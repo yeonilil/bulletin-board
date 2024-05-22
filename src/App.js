@@ -6,7 +6,6 @@ import DashBoard from "./pages/dashboard/DashBoard";
 import BoardList from "./pages/board/BoardList";
 import styles from "./styles/global.scss";
 import Footer from "./components/Footer/Footer";
-import { useEffect } from "react";
 
 function App() {
   return (
