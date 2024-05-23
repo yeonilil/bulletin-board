@@ -1,0 +1,49 @@
+.boardHeader {
+  height: 86px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    color: #ee3918;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 32px;
+    margin-top: 8px;
+  }
+}
+.boardButtonContainer {
+  width: 405px;
+  display: flex;
+  margin-top: 80px;
+
+  button {
+    width: 127px;
+    height: 37px;
+    padding: 8px;
+    margin: 0px 12px;
+    border: 0;
+    border-radius: 4px;
+    background-color: #eeeeee;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+  }
+  .currentBoardButton {
+    background-color: #ee3918;
+    color: white;
+  }
+}
+.writeButton {
+  width: 127px;
+  height: 48px;
+  padding: 12px;
+  border: 0;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+}

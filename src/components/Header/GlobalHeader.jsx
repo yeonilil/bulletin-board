@@ -22,7 +22,7 @@ function GlobalHeader() {
         <nav>
           <ul className={styles.categoryMenu}>
             <li key={"게시판"}>
-              <Link to={`/board`} className={styles.navLink}>
+              <Link to={`/boardlist`} className={styles.navLink}>
                 게시판
               </Link>
             </li>
