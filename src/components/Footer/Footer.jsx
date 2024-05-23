@@ -1,7 +1,11 @@
+import { useEffect } from "react";
 import styles from "./Footer.module.scss";
+import { useLocation } from "react-router-dom";
 
 function Footer() {
-  if (window.location.pathname === "/dashboard") return null;
+  const locationNow = useLocation();
+  if (locationNow.pathname === "/dashboard") return null;
+
   return (
     <footer>
       <div className={styles.footerContainer}>
