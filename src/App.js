@@ -9,34 +9,38 @@ import Footer from "./components/Footer/Footer";
 import BoardDetail from "./pages/board/postDetail/BoardDetail";
 import PostForm from "./pages/board/postForm/PostForm";
 import { useState, useEffect } from "react";
-import { getPostData } from "../src/services/api";
+import { getUserData } from "../src/services/api";
 
 function App() {
-  const [userData, setUserData] = useState();
+  const [userData, setUserData] = useState([]);
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await getPostData();
+        const data = await getUserData();
         setUserData(data);
       } catch (error) {
         console.error("Error fetching data: ", error);
       }
     };
     fetchData();
+    console.log(userData);
   }, []);
   return (
     <div className="App">
       <BrowserRouter>
-        <GlobalHeader />
+        <GlobalHeader data={userData} />
         <Routes>
           <Route path="/">
-            <Route index element={<Login />} />
+            <Route index element={<Login data={userData} />} />
             <Route path="signup" element={<Signup />} />
             <Route path="dashboard" element={<DashBoard />} />
-            <Route path="boardlist" element={<BoardList />}>
-              <Route path=":postId/detail" element={<BoardDetail />} />
+            <Route path="boardlist/:userId" element={<BoardList />}>
+              <Route
+                path=":postId/detail"
+                element={<BoardDetail data={userData} />}
+              />
             </Route>
-            <Route path=":post" element={<PostForm />} />
+            <Route path=":post" element={<PostForm data={userData} />} />
           </Route>
         </Routes>
         <Footer />

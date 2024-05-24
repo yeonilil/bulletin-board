@@ -17,3 +17,10 @@ async function GET(URL) {
 export async function getPostData() {
   return await GET(`http://localhost:3000/data/postData.json`);
 }
+export async function getUserData() {
+  return await GET(`http://localhost:3000/data/userData.json`);
+}
+
+export async function getCommentData() {
+  return await GET(`http://localhost:3000/data/commentData.json`);
+}
