@@ -35,6 +35,9 @@ form > h1 {
     color: #000000;
   }
 }
+.loginInput:invalid {
+  border-color: #eb4852;
+}
 .passwordContainer {
   width: 384px;
   position: relative;

@@ -34,13 +34,14 @@ function App() {
             <Route index element={<Login data={userData} />} />
             <Route path="signup" element={<Signup />} />
             <Route path="dashboard" element={<DashBoard />} />
-            <Route path="boardlist/:userId" element={<BoardList />}>
+            <Route path="boardlist" element={<BoardList />}>
+              <Route path="boardlist/:userId" element={<BoardList />} />
               <Route
                 path=":postId/detail"
                 element={<BoardDetail data={userData} />}
               />
             </Route>
-            <Route path=":post" element={<PostForm data={userData} />} />
+            <Route path=":post" element={<PostForm />} />
           </Route>
         </Routes>
         <Footer />

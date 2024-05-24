@@ -10,11 +10,20 @@ function Signup() {
     showPw: false,
     isAgree: false,
   });
+  //비밀번호 유효성 검사
+  function validatePassword(password) {
+    const passwordRegex =
+      /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+    return passwordRegex.test(password);
+  }
 
   const saveInput = (e) => {
+    const { name, value } = e.target;
     setInput((prevInput) => ({
       ...prevInput,
-      [e.target.name]: e.target.value,
+      [name]: value,
+      isValidPassword:
+        name === "pw" ? validatePassword(value) : prevInput.isValidPassword,
     }));
   };
 
@@ -42,7 +51,9 @@ function Signup() {
               비밀번호
               <input
                 name="pw"
-                className={styles.loginInput}
+                className={`${styles.loginInput} ${
+                  input.isValidPassword ? "" : styles.invalidPassword
+                }`}
                 type={input.showPw ? "text" : "password"}
                 placeholder="8자 이상, 영문자, 숫자, 특수기호중 2가지 조합"
                 value={input.pw}
@@ -59,7 +70,9 @@ function Signup() {
           <div className={styles.passwordRetryContainer}>
             <input
               name="pwRetry"
-              className={styles.loginInput}
+              className={`${styles.loginInput} ${
+                input.isValidPassword ? "" : styles.invalidPassword
+              }`}
               type={input.showPw ? "text" : "password"}
               placeholder="비밀번호를 다시 입력해주세요"
               value={input.retryPw}

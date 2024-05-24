@@ -40,6 +40,12 @@ form > label {
     color: #000000;
   }
 }
+.loginInput:invalid {
+  border-color: #eb4852;
+}
+.invalidPassword {
+  border: 1px solid #eb4852;
+}
 .passwordContainer,
 .passwordRetryContainer {
   width: 384px;
