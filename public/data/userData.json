@@ -1,0 +1,72 @@
+[
+  {
+    "userId": "user1",
+    "userEmail": "user1@example.com",
+    "userPw": "password1",
+    "userName": "홍길동",
+    "agreementChecked": true
+  },
+  {
+    "userId": "user2",
+    "userEmail": "user2@example.com",
+    "userPw": "password2",
+    "userName": "김철수",
+    "agreementChecked": false
+  },
+  {
+    "userId": "user3",
+    "userEmail": "user3@example.com",
+    "userPw": "password3",
+    "userName": "이영희",
+    "agreementChecked": true
+  },
+  {
+    "userId": "user4",
+    "userEmail": "user4@example.com",
+    "userPw": "password4",
+    "userName": "박순이",
+    "agreementChecked": false
+  },
+  {
+    "userId": "user5",
+    "userEmail": "user5@example.com",
+    "userPw": "password5",
+    "userName": "정진영",
+    "agreementChecked": true
+  },
+  {
+    "userId": "user6",
+    "userEmail": "user6@example.com",
+    "userPw": "password6",
+    "userName": "이민수",
+    "agreementChecked": false
+  },
+  {
+    "userId": "user7",
+    "userEmail": "user7@example.com",
+    "userPw": "password7",
+    "userName": "김미영",
+    "agreementChecked": true
+  },
+  {
+    "userId": "user8",
+    "userEmail": "user8@example.com",
+    "userPw": "password8",
+    "userName": "최영호",
+    "agreementChecked": false
+  },
+  {
+    "userId": "user9",
+    "userEmail": "user9@example.com",
+    "userPw": "password9",
+    "userName": "장현우",
+    "agreementChecked": true
+  },
+  {
+    "userId": "user10",
+    "userEmail": "user10@example.com",
+    "userPw": "password10",
+    "userName": "송지우",
+    "agreementChecked": false
+  }
+]

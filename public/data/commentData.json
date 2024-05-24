@@ -1,0 +1,182 @@
+[
+  {
+    "postId": 1,
+    "Writer": "홍길동",
+    "PostedTime": "2024-05-01 10:30:00",
+    "Content": "재밌는 동영상입니다!"
+  },
+  {
+    "postId": 1,
+    "Writer": "김철수",
+    "PostedTime": "2024-05-01 11:15:00",
+    "Content": "ㅋㅋㅋㅋㅋㅋㅋㅋ"
+  },
+  {
+    "postId": 1,
+    "Writer": "이영희",
+    "PostedTime": "2024-05-01 12:00:00",
+    "Content": "고양이 너무 귀여워요!"
+  },
+  {
+    "postId": 2,
+    "Writer": "박민수",
+    "PostedTime": "2024-05-02 12:30:00",
+    "Content": "여행지가 정말 멋져 보입니다."
+  },
+  {
+    "postId": 2,
+    "Writer": "최지은",
+    "PostedTime": "2024-05-02 13:45:00",
+    "Content": "이곳 가보고 싶어요!"
+  },
+  {
+    "postId": 2,
+    "Writer": "이상철",
+    "PostedTime": "2024-05-02 15:00:00",
+    "Content": "다음 휴가에 여기로 가야겠어요."
+  },
+  {
+    "postId": 3,
+    "Writer": "김민지",
+    "PostedTime": "2024-05-03 09:30:00",
+    "Content": "파스타 레시피 감사합니다!"
+  },
+  {
+    "postId": 3,
+    "Writer": "박영수",
+    "PostedTime": "2024-05-03 10:45:00",
+    "Content": "오늘 저녁에 해먹어 봐야겠어요."
+  },
+  {
+    "postId": 3,
+    "Writer": "김영희",
+    "PostedTime": "2024-05-03 11:00:00",
+    "Content": "맛있어 보여요!"
+  },
+  {
+    "postId": 4,
+    "Writer": "최민영",
+    "PostedTime": "2024-05-04 14:00:00",
+    "Content": "꽃보다 예쁜 여행지네요."
+  },
+  {
+    "postId": 4,
+    "Writer": "박지우",
+    "PostedTime": "2024-05-04 15:30:00",
+    "Content": "이곳 가볼까요?"
+  },
+  {
+    "postId": 4,
+    "Writer": "김영호",
+    "PostedTime": "2024-05-04 16:45:00",
+    "Content": "꽃 구경하러 가보고 싶어요."
+  },
+  {
+    "postId": 5,
+    "Writer": "홍진영",
+    "PostedTime": "2024-05-05 11:00:00",
+    "Content": "공부 방법에 대해 궁금했어요."
+  },
+  {
+    "postId": 5,
+    "Writer": "김지수",
+    "PostedTime": "2024-05-05 12:15:00",
+    "Content": "도움이 됐어요!"
+  },
+  {
+    "postId": 5,
+    "Writer": "이지훈",
+    "PostedTime": "2024-05-05 13:30:00",
+    "Content": "감사합니다."
+  },
+  {
+    "postId": 6,
+    "Writer": "박민지",
+    "PostedTime": "2024-05-06 10:00:00",
+    "Content": "브런치 레시피 좋네요."
+  },
+  {
+    "postId": 6,
+    "Writer": "최진우",
+    "PostedTime": "2024-05-06 11:30:00",
+    "Content": "주말에 해먹어 볼게요."
+  },
+  {
+    "postId": 6,
+    "Writer": "김서영",
+    "PostedTime": "2024-05-06 12:45:00",
+    "Content": "맛있겠어요!"
+  },
+  {
+    "postId": 7,
+    "Writer": "정태희",
+    "PostedTime": "2024-05-07 13:00:00",
+    "Content": "리뷰 잘 읽었습니다."
+  },
+  {
+    "postId": 7,
+    "Writer": "이지은",
+    "PostedTime": "2024-05-07 14:15:00",
+    "Content": "드라마 어떤지 궁금했어요."
+  },
+  {
+    "postId": 7,
+    "Writer": "김태윤",
+    "PostedTime": "2024-05-07 15:30:00",
+    "Content": "추천해주셔서 감사합니다."
+  },
+  {
+    "postId": 8,
+    "Writer": "박정민",
+    "PostedTime": "2024-05-08 09:00:00",
+    "Content": "여름휴가 어디로 갈지 고민했는데 좋은 정보네요."
+  },
+  {
+    "postId": 8,
+    "Writer": "김은지",
+    "PostedTime": "2024-05-08 10:15:00",
+    "Content": "여행가기 전에 참고할게요."
+  },
+  {
+    "postId": 8,
+    "Writer": "이상민",
+    "PostedTime": "2024-05-08 11:30:00",
+    "Content": "휴가 기대되네요!"
+  },
+  {
+    "postId": 9,
+    "Writer": "최서연",
+    "PostedTime": "2024-05-09 14:00:00",
+    "Content": "식단 짜는 법에 대해 궁금했어요."
+  },
+  {
+    "postId": 9,
+    "Writer": "김민우",
+    "PostedTime": "2024-05-09 15:15:00",
+    "Content": "다이어트 하려고 찾아봤어요."
+  },
+  {
+    "postId": 9,
+    "Writer": "이수현",
+    "PostedTime": "2024-05-09 16:30:00",
+    "Content": "정보 감사합니다."
+  },
+  {
+    "postId": 10,
+    "Writer": "박지영",
+    "PostedTime": "2024-05-10 10:00:00",
+    "Content": "취미 생활이 필요했는데 좋은 추천이네요."
+  },
+  {
+    "postId": 10,
+    "Writer": "김진우",
+    "PostedTime": "2024-05-10 11:15:00",
+    "Content": "다양한 취미 생활 해보고 싶어요."
+  },
+  {
+    "postId": 10,
+    "Writer": "이영호",
+    "PostedTime": "2024-05-10 12:30:00",
+    "Content": "즐거운 취미 생활 기대됩니다!"
+  }
+]

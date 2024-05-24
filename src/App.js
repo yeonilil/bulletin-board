@@ -6,7 +6,8 @@ import DashBoard from "./pages/dashboard/DashBoard";
 import BoardList from "./pages/board/BoardList";
 import styles from "./styles/global.scss";
 import Footer from "./components/Footer/Footer";
-import BoardDetail from "./pages/board/components/BoardDetail";
+import BoardDetail from "./pages/board/postDetail/BoardDetail";
+import PostForm from "./pages/board/postForm/PostForm";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="boardlist" element={<BoardList />}>
               <Route index element={<BoardList />} />
               <Route path=":id/detail" element={<BoardDetail />} />
+              <Route path=":id/post" element={<PostForm />} />
             </Route>
           </Route>
         </Routes>

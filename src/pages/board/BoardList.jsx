@@ -1,10 +1,13 @@
 import styles from "./BoardList.module.scss";
 import { useState, useEffect } from "react";
 import { getPostData } from "../../services/api";
-import PostList from "./components/PostList";
+import PostList from "./postList/PostList";
+import { Link, useParams, useNavigate } from "react-router-dom";
 
 function BoardList() {
   const [postData, setPostData] = useState();
+  const { id } = useParams();
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
@@ -31,7 +34,12 @@ function BoardList() {
           <button>질문 게시판</button>
         </div>
         <PostList data={postData} />
-        <button className={styles.writeButton}>글쓰기</button>
+        <button
+          className={styles.writeButton}
+          onClick={() => navigate(`/boardlist/${id}/post`)}
+        >
+          글쓰기
+        </button>
       </div>
     </div>
   );
