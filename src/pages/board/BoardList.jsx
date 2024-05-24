@@ -6,7 +6,7 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 
 function BoardList() {
   const [postData, setPostData] = useState();
-  const { id } = useParams();
+  const { userId } = useParams();
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -36,7 +36,7 @@ function BoardList() {
         <PostList data={postData} />
         <button
           className={styles.writeButton}
-          onClick={() => navigate(`/boardlist/${id}/post`)}
+          onClick={() => navigate(`/post`)}
         >
           글쓰기
         </button>

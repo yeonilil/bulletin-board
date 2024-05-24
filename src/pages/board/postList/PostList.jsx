@@ -26,10 +26,10 @@ function PostList({ data }) {
         {data.map((item, idx) => (
           <li key={idx}>
             <div className={styles.contentList}>
-              <div className={styles.id}> {item.id} </div>
+              <div className={styles.id}> {item.postId} </div>
               <div className={styles.title}>
                 <Link
-                  to={`/boardlist/${item.id}/detail`}
+                  to={`/boardlist/${item.postId}/detail`}
                   className={styles.titleLink}
                 >
                   {item.Title}
