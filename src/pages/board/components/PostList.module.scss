@@ -1,0 +1,59 @@
+.list {
+  list-style: none;
+  border-top: 2px solid black;
+}
+.contentListTitle {
+  display: flex;
+  height: 51px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 40px;
+  .id {
+    width: 62px;
+  }
+  .title {
+    width: 602px;
+  }
+  .author {
+    width: 60px;
+  }
+  .postedTime,
+  .views {
+    width: 106px;
+  }
+}
+.contentList {
+  display: flex;
+  height: 51px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 16px;
+  border-top: 1px solid #e1e1e1;
+  padding: 12px 40px;
+  .id {
+    width: 62px;
+  }
+  .title {
+    width: 602px;
+    cursor: pointer;
+  }
+  .author {
+    width: 60px;
+  }
+  .postedTime,
+  .views {
+    width: 106px;
+  }
+}
+.titleLink {
+  color: black;
+  text-decoration: none #272727;
+  &:visited {
+    color: black;
+  }
+  &:hover {
+    color: #828282;
+    font-weight: 500;
+  }
+}

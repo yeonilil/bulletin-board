@@ -6,6 +6,7 @@ import DashBoard from "./pages/dashboard/DashBoard";
 import BoardList from "./pages/board/BoardList";
 import styles from "./styles/global.scss";
 import Footer from "./components/Footer/Footer";
+import BoardDetail from "./pages/board/components/BoardDetail";
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
             <Route index element={<Login />} />
             <Route index path="signup" element={<Signup />} />
             <Route index path="dashboard" element={<DashBoard />} />
-            <Route path="boardlist">
+            <Route path="boardlist" element={<BoardList />}>
               <Route index element={<BoardList />} />
+              <Route path=":id/detail" element={<BoardDetail />} />
             </Route>
           </Route>
         </Routes>

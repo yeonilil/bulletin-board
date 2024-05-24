@@ -1,8 +1,16 @@
+.boardListContainer {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 200px;
+}
 .boardHeader {
   height: 86px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
   h2 {
     color: #ee3918;
     font-weight: 700;
@@ -30,6 +38,7 @@
     font-size: 14px;
     font-weight: 400;
     text-align: center;
+    cursor: pointer;
   }
   .currentBoardButton {
     background-color: #ee3918;
@@ -46,4 +55,7 @@
   font-weight: 500;
   color: white;
   background-color: black;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 880px;
 }
