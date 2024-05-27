@@ -6,11 +6,13 @@ function Signup() {
   const [input, setInput] = useState({
     email: "",
     pw: "",
+    pwRetry: "",
     name: "",
     showPw: false,
-    isAgree: false,
+    isAgree: false, // 개인정보 처리 동의 여부
   });
-  //비밀번호 유효성 검사
+
+  // 비밀번호 유효성 검사
   function validatePassword(password) {
     const passwordRegex =
       /^(?=.*[A-Za-z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
@@ -18,10 +20,14 @@ function Signup() {
   }
 
   const saveInput = (e) => {
-    const { name, value } = e.target;
+    const { name, value, type, checked } = e.target;
+
+    // 입력값에 따라 다르게 처리
+    const newValue = type === "checkbox" ? checked : value;
+
     setInput((prevInput) => ({
       ...prevInput,
-      [name]: value,
+      [name]: newValue,
       isValidPassword:
         name === "pw" ? validatePassword(value) : prevInput.isValidPassword,
     }));
@@ -42,10 +48,11 @@ function Signup() {
               className={styles.loginInput}
               name="email"
               type="email"
-              value={input.id}
+              value={input.email}
               onChange={saveInput}
             />
           </label>
+          {/* 비밀번호 입력 */}
           <div className={styles.passwordContainer}>
             <label>
               비밀번호
@@ -67,17 +74,21 @@ function Signup() {
               onClick={handlePwToggle}
             />
           </div>
+          {/* 비밀번호 재입력 */}
           <div className={styles.passwordRetryContainer}>
-            <input
-              name="pwRetry"
-              className={`${styles.loginInput} ${
-                input.isValidPassword ? "" : styles.invalidPassword
-              }`}
-              type={input.showPw ? "text" : "password"}
-              placeholder="비밀번호를 다시 입력해주세요"
-              value={input.retryPw}
-              onChange={saveInput}
-            />
+            <label>
+              비밀번호 확인
+              <input
+                name="pwRetry"
+                className={`${styles.loginInput} ${
+                  input.isValidPassword ? "" : styles.invalidPassword
+                }`}
+                type={input.showPw ? "text" : "password"}
+                placeholder="비밀번호를 다시 입력해주세요"
+                value={input.pwRetry}
+                onChange={saveInput}
+              />
+            </label>
             <img
               className={styles.eyeIcon}
               src={eyeImg}
@@ -85,6 +96,7 @@ function Signup() {
               onClick={handlePwToggle}
             />
           </div>
+          {/* 닉네임 입력 */}
           <label>
             닉네임
             <input
@@ -95,16 +107,21 @@ function Signup() {
               onChange={saveInput}
             />
           </label>
+          {/* 개인정보 처리 동의 */}
           <div className={styles.agreementContainer}>
             <input
               type="checkbox"
-              name="agreeCheckInfo"
+              name="isAgree"
+              checked={input.isAgree}
               onChange={saveInput}
-            ></input>
+            />
             <label>개인정보 처리방침 / 데이터 활용 동의</label>
             <p>(필수)</p>
           </div>
-          <button className={styles.signUpButton}>회원가입</button>
+          {/* 회원가입 버튼 */}
+          <button className={styles.signUpButton} disabled={!input.isAgree}>
+            회원가입
+          </button>
         </form>
       </div>
     </div>
