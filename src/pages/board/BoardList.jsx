@@ -33,7 +33,7 @@ function BoardList() {
           <button>질문 게시판</button>
           <button>질문 게시판</button>
         </div>
-        <PostList data={postData} />
+        {postData && <PostList data={postData} />}
         <button
           className={styles.writeButton}
           onClick={() => navigate(`/post`)}
