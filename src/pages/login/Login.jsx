@@ -23,7 +23,6 @@ function Login(userData) {
   console.log(userData);
   // 로그인 버튼 클릭 시
   const onClick = (e) => {
-    console.log(userData);
     e.preventDefault(); // 폼 제출 방지
     if (userData.data && userData.data.length > 0) {
       const user = userData.data.find((data) => data.userEmail === input.email);

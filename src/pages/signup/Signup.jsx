@@ -59,7 +59,9 @@ function Signup() {
               <input
                 name="pw"
                 className={`${styles.loginInput} ${
-                  input.isValidPassword ? "" : styles.invalidPassword
+                  input.inputTouched && !input.isValidPassword
+                    ? styles.invalidPassword
+                    : ""
                 }`}
                 type={input.showPw ? "text" : "password"}
                 placeholder="8자 이상, 영문자, 숫자, 특수기호중 2가지 조합"
@@ -81,7 +83,9 @@ function Signup() {
               <input
                 name="pwRetry"
                 className={`${styles.loginInput} ${
-                  input.isValidPassword ? "" : styles.invalidPassword
+                  input.inputTouched && !input.isValidPassword
+                    ? styles.invalidPassword
+                    : ""
                 }`}
                 type={input.showPw ? "text" : "password"}
                 placeholder="비밀번호를 다시 입력해주세요"
@@ -90,7 +94,7 @@ function Signup() {
               />
             </label>
             <img
-              className={styles.eyeIcon}
+              className={styles.eyeIcon2}
               src={eyeImg}
               alt="비밀번호 보기"
               onClick={handlePwToggle}
